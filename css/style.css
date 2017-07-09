@@ -1,0 +1,442 @@
+*
+{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Khand', sans-serif;
+}
+
+
+body{
+    background: #e6e6e6;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*index & city*/
+
+a#log-out:link, a#log-out:visited, a#log-out{
+    display: inline-block;
+    position: fixed;
+    padding: 0.2em 0.6em 0;
+    top: 2em;
+    right: -1em;
+    transform: rotate(-90deg);
+    border-radius: 0.8em 0.8em 0 0;
+    border: 2px white solid;
+    background: #ff4d4d;
+    color: white;
+    font-size: 1.6em;
+    transition: opacity 0.3s ease-out;
+    transition-property: all;
+}
+
+a#log-out:hover{
+    box-shadow: -0.15em -0.15em 0.3em 0.1em rgba(0, 0, 0, 0.6);
+}
+
+ a#log-out:active{
+     opacity: 0.8;
+ }
+
+footer{
+    height: 5vh;
+    font-size: 3vh;
+    text-align: center;
+    background: #e6e6e6;
+}
+
+nav{
+    height: 6vh;
+    text-align: center;
+    font-size: 3vh;
+    text-transform: capitalize;
+}
+nav a:link, nav a:visited{
+    color: black;
+}
+nav a:hover{
+    color: blue;
+}
+
+header{
+    height: 25vh;
+    font-size: 2.6vh;
+    color: #4d4d4d;
+    padding: 0em 1em;
+    text-align: center;
+}
+
+header img{
+    width: 3em;
+    height: auto;
+}
+
+section.squared{
+    height: 64vh;
+    width: 100vw;
+    display: flex;
+}
+
+section.squared#without-nav{
+    height: 70vh;
+}
+
+section.squared a.square, section.squared a.square-2{
+    display: block;
+    width: 25vw;
+    background: no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 28vh;
+    font-family: 'Lemon', cursive;
+    font-size: 5vmin;
+    color: white;
+}
+
+ section.squared a.square-2{
+     width: 50vw;
+     font-size: 7vmin;
+ }
+
+section.squared a.square:hover, section.squared a.square-2:hover{
+    opacity: 0.8;
+}
+
+section.squared a.square:active, section.squared a.square-2:active{
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 500px){
+    a.log-out:link, a.log-out:visited{
+        top: 1.8em;
+    }
+    header{
+        height: 18vh;
+        font-size: 2vh;
+    }
+    nav{
+        height: 4vh;
+        font-size: 3vh;
+    }
+    section.squared{
+        height: 74vh;
+    }
+    section.squared a.square, section.squared a.square-2{
+        padding-top: 35vh;
+    }
+    section.squared#without-nav{
+        height: 78vh;
+    }
+    footer{
+        height: 4vh;
+        font-size: 2.6vh;
+    }
+}
+
+/* fields list */
+ul.fields-container{
+    list-style: none;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+ul.fields-container li{
+    padding: 0.5em 1.4em;
+    margin: 2px 2em;
+    color: white;
+    transition: opacity 0.3s ease-out;
+    transition-property: all;
+}
+
+ul.fields-container li:hover{
+    opacity: 0.8;
+}
+
+ul.fields-container li a, ul.fields-container li a:link, ul.fields-container li a:hover, ul.fields-container li a:visited,  ul.fields-container li a:active{
+    font-weight: bolder;
+    color: white;
+}
+
+li.free{
+    background: #85e085;
+}
+
+li.occupied{
+    background: #ff4d4d;
+}
+
+span.status{
+    float: right;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 700px){
+    ul.fields-container li{
+        font-size: 2.6vw;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    ul.fields-container li{
+        font-size: 3.4vw;
+        padding: 1.1em 2vw;
+        margin: 0.6em;
+    }
+}
+
+/* DETAILS */
+.description, .title, h2, .status-free, .status-occupied, .reservation input{
+    text-align: center;
+    font-family: 'Khand', sans-serif;
+}
+
+.city-title{
+    color: #4d4d4d
+}
+
+.title{
+    text-align: center;
+    font-size: 4em;
+    color: #808080;
+}
+
+iframe{
+    border: 5px solid #808080;
+    width: 80vw;
+}
+
+.map{
+    text-align: center;
+    max-width: 100%;
+}
+
+.description{
+    margin: 0.3em 0.3em 0;
+    font-size: 1.2em;
+}
+
+.reservation{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.status-free, .status-occupied, .reservation input, .reservation a{
+    font-size: 1.4em;
+    display: inline-block;
+    line-height: 100px;
+    width: 200px;
+    height: 100px;
+}
+
+.status-free{
+    background: #85e085;
+}
+
+.status-occupied{
+    background: #ff4d4d;
+}
+
+.reservation select{
+    font-size: 1.4em;
+    background: #999999;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+.reservation input, .reservation a{
+    background: #999999;
+    color: black;
+}
+
+.reservation input[type="submit"]:hover, .reservation a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.reservation input[type="submit"]:active, .reservation a:active{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.reservation input[type="range"]{
+    vertical-align: middle;
+    background: #85e085;
+    padding: 0 1em;
+}
+
+@media screen and (max-width: 750px)
+{
+    h1.title{
+        font-size: 2.6em;
+    }
+    .reservation{
+        display: block;
+    }
+    .reservation *, .reservation input, .reservation select, .reservation a{
+        width: 100%;
+        height: 2.6em;
+        padding: 0.6em 0;
+        line-height: normal;
+    }
+    .status-occupied, .status-free{
+        padding: 0.6em 0 0;
+    }
+}
+
+@media screen and (max-width: 620px)
+{
+    a#log-out:link, a#log-out:visited, a#log-out{
+        padding: 0.2em 0.3em 0;
+        top: 1em;
+        font-size: 4.9vw;
+    }
+
+    a#log-out:hover{
+        box-shadow: -0.04em -0.04em 0.1em 0em rgba(0, 0, 0, 0.5);
+    }
+
+    h1.title{
+        font-size: 8vw;
+        margin-top: 0.2em;
+        margin-bottom: -0.2em;
+    }
+    h2.city-title{
+        font-size: 1.2em;
+    }
+}
+
+/*form*/
+form input[type="submit"], form input[type="reset"]{
+    -webkit-appearance: none;
+}
+
+.form{
+    /*width: 20em;*/
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form input, .form textarea{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.form select, .form label{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form select{
+    width: 200px;
+}
+
+.form input{
+    width: 200px;
+}
+
+.form textarea{
+    display: block;
+    margin: 1em auto;
+    width: 50vw;
+    max-width: 500px;
+    min-width: 200px;
+}
+
+div.form-buttons{
+    margin-top: 0.6em;
+    display: inline;
+}
+
+.form input[type="submit"], .form-buttons a{
+    background: rgba(0,0,0,0);
+    font-size: 1.1em;
+    width: auto;
+    color: blue;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover, .form-buttons a:hover{
+    color: black;
+}
+
+a.back-button{
+    display: block;
+    text-align: center;
+}
+div#confirm_dialog{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 100vh;
+}
+div.dialog_body{
+    width: 23em;
+    height: 13em;
+    padding-top: 3em;
+    margin: 10vh auto;
+    text-align: center;
+    background: #e6e6e6;
+    border: 5px solid white;
+    box-shadow: 0.15em 0.15em 0.3em 0.1em rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 400px){
+    div.dialog_body{
+        width: 90vw;
+        height: 8em;
+        box-shadow: 0;
+        padding-top: 0.4em;
+    }
+
+    div#confirm_dialog{
+        padding: 2vh 0;
+    }
+}
+
+/*animations*/
+.fields-container li {
+ vertical-align: middle;
+ -webkit-transform: perspective(1px) translateZ(0);
+ transform: perspective(1px) translateZ(0);
+ box-shadow: 0 0 1px transparent;
+ -webkit-transition-duration: 0.3s;
+ transition-duration: 0.3s;
+ -webkit-transition-property: transform;
+ transition-property: transform;
+}
+.fields-container li:hover, .fields-container li:focus, .fields-container li:active {
+ -webkit-transform: scale(0.99);
+ transform: scale(0.99);
+}
+
+/*.reservation input {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.reservation input:hover, .reservation input:focus, .reservation input:active {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}*/

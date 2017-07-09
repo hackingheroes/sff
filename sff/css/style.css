@@ -1,0 +1,623 @@
+/*
+GLOBAL
+*/
+
+*
+{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Khand', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+body
+{
+    box-shadow: inset 0px 19px 59px 0px rgba(0, 0, 0, 0.9);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #333333;
+    /*background-image: url("../img/background.png");
+    background-size: cover;*/
+}
+section,article
+{
+     flex: 1;
+}
+
+@font-face
+{
+    font-family: Bebas;
+    src: url(../fonts/Bebas.otf);
+}
+
+/*
+NAVBAR
+*/
+.navbar
+{
+    box-shadow: inset 0px 3px 59px 0px rgba(0, 0, 0, 0.45);
+    top: 0;
+    position: fixed;
+    min-width: 80px;
+    width: 10%;
+    border-radius: 0;
+    height: 100%;
+    z-index: 1000;
+    background: #666666;
+}
+
+.navbar li
+{
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+}
+.nav
+{
+    margin: 0;
+    padding: 0;
+    padding-left: 25px;
+}
+
+.nav-li
+{
+    margin-top: 100%;
+}
+
+.circle
+{
+    background-color: #262626;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+article
+{
+    margin-left: 10%;
+}
+
+
+@media screen and (max-width: 700px)
+{
+    .navbar
+    {
+        position: relative;
+        width: 100%;
+        height: 19%;
+        min-height: 200px;
+        margin-bottom: 30px;
+
+    }
+    .navbar li
+    {
+        clear: both;
+        text-align: center;
+    }
+    .nav-li
+    {
+        margin-top: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+    }
+
+    article
+    {
+        margin-left: 0;
+    }
+}
+
+/*
+SLIDER
+*/
+
+.swiper-container
+{
+    width: 55%;
+    height: 600px;
+    padding: 70px;
+}
+.swiper-slide
+{
+
+    color: white;
+    font-size: 4em;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0px 0px 66.5px 66.5px rgba(0, 0, 0, 0.5);
+    border: 15px #262626 solid;
+}
+
+.swiper-slide a
+{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-pagination-bullet
+{
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 800px)
+{
+    .swiper-container
+    {
+        width: 100%;
+        height: 450px;
+    }
+    .swiper-slide
+    {
+
+        font-size: 1.8em;
+    }
+}
+
+
+
+/*
+CITY
+*/
+
+footer
+{
+    z-index: 1000;
+    color: #808080;
+    font-family: Rajdhani;
+    background-color: #262626;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+nav
+{
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: capitalize;
+}
+
+nav a:link, nav a:visited
+{
+    color: black;
+}
+
+nav a:hover
+{
+    color: blue;
+}
+
+header
+{
+    color: #4d4d4d;
+    text-align: center;
+}
+
+header img
+{
+    width: 3em;
+    height: auto;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+section.squared
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.squared .square, section.squared a.square-2
+{
+    display: block;
+    width: 25%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    font-size: 45px;
+    color: white;
+}
+
+.squared
+{
+    height: 100%;
+}
+
+ section.squared .square-2
+ {
+     width: 50%;
+ }
+
+section.squared a.square:hover, section.squared a.square-2:hover
+{
+    opacity: 0.8;
+}
+
+section.squared a.square:active, section.squared a.square-2:active
+{
+    opacity: 0.6;
+}
+
+/*
+CITY MEDIA QUERIES
+*/
+
+@media screen and (max-width: 700px)
+{
+    section.squared a.square
+    {
+        width: 50%;
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    section.squared a.square-2
+    {
+        width: 100%;
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 300px)
+{
+    section.squared a.square
+    {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*
+DETAILS
+*/
+.description, h2, .status-free, .status-occupied,.reservation input
+{
+    text-align: center;
+    font-family: 'Khand', sans-serif;
+}
+
+
+.city-title
+{
+    color: white;
+}
+
+.title
+{
+    font-family: 'Bebas';
+    text-align: center;
+    font-size: 5em;
+    color: white;
+}
+
+.map
+{
+    text-align: center;
+    max-width: 100%;
+}
+
+iframe
+{
+    border: 15px #262626 solid;
+}
+
+.description
+{
+    margin-top: 2.3em;
+    font-size: 1.2em;
+}
+
+.reservation
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.reservation input,.reservation a
+{
+    font-size: 1.4em;
+    display: inline-block;
+    background: #999999;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    color: black;
+}
+
+
+.reservation select
+{
+    font-size: 1.4em;
+    background: #999999;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+.status-free
+{
+    font-size: 1.4em;
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    background: #85e085;
+}
+
+.status-occupied
+{
+    font-size: 1.4em;
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    background: #ff4d4d;
+}
+
+ul.fields-container
+{
+    list-style: none;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+ul.fields-container li
+{
+    padding: 0.5em 1.4em;
+    margin: 2px 2em;
+    color: white;
+}
+
+ul.fields-container li:hover
+{
+    opacity: 0.8;
+}
+
+ul.fields-container li a
+{
+    font-weight: bolder;
+}
+
+li.free
+{
+    background: #85e085;
+}
+
+li.occupied
+{
+    background: #ff4d4d;
+}
+
+span.status
+{
+    float: right;
+    text-transform: uppercase;
+}
+
+/*
+DETAILS MEDIA QUERIES
+*/
+
+@media screen and (max-width: 450px)
+{
+    li
+    {
+        font-size: 0.6em;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    h1.title
+    {
+        font-size: 2.8em;
+    }
+    .reservation *, .reservation input, .reservation select, .reservation a
+    {
+        width: 100%;
+        height: 2.6em;
+        padding-top: 0;
+        line-height: normal;
+    }
+    .status-occupied, .status-free
+    {
+        padding: 0.6em 0 0;
+    }
+}
+
+
+
+
+
+
+
+
+/*
+FORM
+*/
+.form
+{
+    text-align: center;
+    margin: 5% auto;
+}
+
+.form input, .form textarea
+{
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.form input
+{
+    width: 30%;
+    height: 30px;
+}
+.form label
+{
+    color: white;
+    font-size: 1.5em;
+}
+
+.form select, .form label
+{
+
+    display: block;
+    text-align: center;
+    margin: 0.8em auto;
+}
+.form-buttons
+{
+    margin-top: 50px;
+    color: white;
+    padding: 10px;
+}
+.form-buttons a
+{
+    padding: 0 10px;
+    color: white;
+}
+
+.form input[type="submit"], .form-buttons a
+{
+    width: 170px;
+    height: 40px;
+    background: #666666;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover, .form-buttons a:hover
+{
+    color: black;
+}
+
+@media screen and (max-width: 575px)
+{
+    .map
+    {
+        margin-top: 50px;
+    }
+    iframe{
+        width: 12.5em;
+        height: 12.5em;
+    }
+}
+
+
+/*
+ANIMATIONS
+*/
+.fields-container li
+{
+ vertical-align: middle;
+ -webkit-transform: perspective(1px) translateZ(0);
+ transform: perspective(1px) translateZ(0);
+ box-shadow: 0 0 1px transparent;
+ -webkit-transition-duration: 0.3s;
+ transition-duration: 0.3s;
+ -webkit-transition-property: transform;
+ transition-property: transform;
+}
+.fields-container li:hover, .fields-container li:focus, .fields-container li:active
+{
+ -webkit-transform: scale(0.99);
+ transform: scale(0.99);
+}
+
+.reservation input
+{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.reservation input:hover, .reservation input:focus, .reservation input:active
+{
+  -webkit-transform: scale(0.88);
+  transform: scale(0.88);
+}
